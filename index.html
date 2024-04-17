@@ -1,24 +1,34 @@
-<style>
-/* CSS */
+<!DOCTYPE html>
+<html lang="eng-usa">
+<head>
+  <title>Mona Lisa Background</title>
+  <style>
+    body {
+      background-image: url('monalisa.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 500vh;
+      margin: 0;
+      position: relative;
+    }
+
+    #gif-overlay {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      display: none;
+    }
+  </style>
   
-  
+</head>
+<body>
+  <img id="gif-overlay" src="gif.gif" alt="GIF Overlay" style="display:none;">
 
-</style>
-<div>
-  <h1>Fav pepe meme</h1>
-  <video>src="https://www.youtube.com/shorts/Dl4ndEZkoRA"</video>
-  <a href="#">https://www.youtube.com</a>
-  <!-- WHY ISNT THIS VIDEO WORKING -->
-  <!-- commmand z = undo -->
-  <!-- command y = redo  -->
-  <img src="https://i1.wp.com/www.vagant.no/wp-content/uploads/2018/05/pepe-the-frog-1272162_1920.jpg?fit=1920%2C1371" alt="description of image">
-</div>
-
-
-
-<script>
-
-  //Javascript
-
-
-</script>
+  <script>
+    setTimeout(function() {
+      document.getElementById('gif-overlay').style.display = 'block';
+    }, 5000); // 5000 milliseconds = 5 seconds
+  </script>
+</body>
+</html>
